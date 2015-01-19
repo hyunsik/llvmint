@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `llvmint` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, llvmint">
+
+    <title>llvmint - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>llvmint</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/llvmint/lib.rs.html#1-15721'>[src]</a></span></h1>
+<div class='docblock'><p>Bindings to (almost) all LLVM intrinsics.</p>
+
+<p>Intrinsics are categorised into modules by the architecture on
+which they are supported (however, see <a href="#platform-support">Platform
+support</a> for a caveat), with certain intrinsics
+available at the top level. These are raw bindings and absolutely
+zero error checking is performed.</p>
+
+<h1 id="naming" class='section-header'><a
+                           href="#naming">Naming</a></h1>
+<p>The intrinsics are named entirely for their internal LLVM names,
+with the <code>llvm</code> prefix stripped, <code>.</code> replaced by <code>_</code> and, if it
+exists, a platform prefix replaced by being placed in a module of
+that name. For example, <code>llvm.adjust.trampoline</code> becomes
+<code>::adjust_trampoline</code> and <code>llvm.x86.addcarry.u32</code> becomes
+<code>::x86::addcarry_u32</code>.</p>
+
+<p>Many of these intrinsics have corresponding intrinsics exposed by
+GCC/Clang in C/C++, these names are listed in
+<a href="gcc_names/index.html"><code>gcc_names</code></a>.</p>
+
+<h1 id="platform-support" class='section-header'><a
+                           href="#platform-support">Platform support</a></h1>
+<p>An intrinsic being available in a certain module (or at the top
+level) does not guarantee that it is supported on all CPUs of that
+architecture (resp. all CPUs), e.g. the x86::avx512 are only
+supported on the very latest x86-64 CPUs, not on older x86
+processors.</p>
+
+<p>Using an intrinsic in a configuration that is not supported will
+likely cause LLVM assertions or general badness along those lines.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='AMDGPU/index.html'
+                               title='llvmint::AMDGPU'>AMDGPU</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the AMDGPU architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='aarch64/index.html'
+                               title='llvmint::aarch64'>aarch64</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the aarch64 architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='arm/index.html'
+                               title='llvmint::arm'>arm</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the arm architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='cuda/index.html'
+                               title='llvmint::cuda'>cuda</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the cuda architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='gcc_names/index.html'
+                               title='llvmint::gcc_names'>gcc_names</a></td>
+                        <td class='docblock short'><p>Listing of the corresponding name(s) of many GCC intrinsics, for reference/search purposes.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='hexagon/index.html'
+                               title='llvmint::hexagon'>hexagon</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the hexagon architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='mips/index.html'
+                               title='llvmint::mips'>mips</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the mips architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='nvvm/index.html'
+                               title='llvmint::nvvm'>nvvm</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the nvvm architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='ppc/index.html'
+                               title='llvmint::ppc'>ppc</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the ppc architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='ptx/index.html'
+                               title='llvmint::ptx'>ptx</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the ptx architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='r600/index.html'
+                               title='llvmint::r600'>r600</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the r600 architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='x86/index.html'
+                               title='llvmint::x86'>x86</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the x86 architecture.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='xcore/index.html'
+                               title='llvmint::xcore'>xcore</a></td>
+                        <td class='docblock short'><p>LLVM intrinsics for the xcore architecture.</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.adjust_trampoline.html'
+                               title='llvmint::adjust_trampoline'>adjust_trampoline</a></td>
+                        <td class='docblock short'><p>The <code>llvm.adjust.trampoline</code> intrinsic; known as <code>__builtin_adjust_trampoline</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.assume.html'
+                               title='llvmint::assume'>assume</a></td>
+                        <td class='docblock short'><p>The <code>llvm.assume</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.clear_cache.html'
+                               title='llvmint::clear_cache'>clear_cache</a></td>
+                        <td class='docblock short'><p>The <code>llvm.clear.cache</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.debugtrap.html'
+                               title='llvmint::debugtrap'>debugtrap</a></td>
+                        <td class='docblock short'><p>The <code>llvm.debugtrap</code> intrinsic; known as <code>__builtin_debugtrap</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.donothing.html'
+                               title='llvmint::donothing'>donothing</a></td>
+                        <td class='docblock short'><p>The <code>llvm.donothing</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_dwarf_cfa.html'
+                               title='llvmint::eh_dwarf_cfa'>eh_dwarf_cfa</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.dwarf.cfa</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_return_i32.html'
+                               title='llvmint::eh_return_i32'>eh_return_i32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.return.i32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_return_i64.html'
+                               title='llvmint::eh_return_i64'>eh_return_i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.return.i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_sjlj_callsite.html'
+                               title='llvmint::eh_sjlj_callsite'>eh_sjlj_callsite</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.sjlj.callsite</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_sjlj_functioncontext.html'
+                               title='llvmint::eh_sjlj_functioncontext'>eh_sjlj_functioncontext</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.sjlj.functioncontext</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_sjlj_longjmp.html'
+                               title='llvmint::eh_sjlj_longjmp'>eh_sjlj_longjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.sjlj.longjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_sjlj_lsda.html'
+                               title='llvmint::eh_sjlj_lsda'>eh_sjlj_lsda</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.sjlj.lsda</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_sjlj_setjmp.html'
+                               title='llvmint::eh_sjlj_setjmp'>eh_sjlj_setjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.sjlj.setjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_typeid_for.html'
+                               title='llvmint::eh_typeid_for'>eh_typeid_for</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.typeid.for</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eh_unwind_init.html'
+                               title='llvmint::eh_unwind_init'>eh_unwind_init</a></td>
+                        <td class='docblock short'><p>The <code>llvm.eh.unwind.init</code> intrinsic; known as <code>__builtin_unwind_init</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.experimental_patchpoint_i64.html'
+                               title='llvmint::experimental_patchpoint_i64'>experimental_patchpoint_i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.experimental.patchpoint.i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.experimental_patchpoint_void.html'
+                               title='llvmint::experimental_patchpoint_void'>experimental_patchpoint_void</a></td>
+                        <td class='docblock short'><p>The <code>llvm.experimental.patchpoint.void</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.experimental_stackmap.html'
+                               title='llvmint::experimental_stackmap'>experimental_stackmap</a></td>
+                        <td class='docblock short'><p>The <code>llvm.experimental.stackmap</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.flt_rounds.html'
+                               title='llvmint::flt_rounds'>flt_rounds</a></td>
+                        <td class='docblock short'><p>The <code>llvm.flt.rounds</code> intrinsic; known as <code>__builtin_flt_rounds</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.frameaddress.html'
+                               title='llvmint::frameaddress'>frameaddress</a></td>
+                        <td class='docblock short'><p>The <code>llvm.frameaddress</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.gcread.html'
+                               title='llvmint::gcread'>gcread</a></td>
+                        <td class='docblock short'><p>The <code>llvm.gcread</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.gcroot.html'
+                               title='llvmint::gcroot'>gcroot</a></td>
+                        <td class='docblock short'><p>The <code>llvm.gcroot</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.gcwrite.html'
+                               title='llvmint::gcwrite'>gcwrite</a></td>
+                        <td class='docblock short'><p>The <code>llvm.gcwrite</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.init_trampoline.html'
+                               title='llvmint::init_trampoline'>init_trampoline</a></td>
+                        <td class='docblock short'><p>The <code>llvm.init.trampoline</code> intrinsic; known as <code>__builtin_init_trampoline</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.lifetime_end.html'
+                               title='llvmint::lifetime_end'>lifetime_end</a></td>
+                        <td class='docblock short'><p>The <code>llvm.lifetime.end</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.lifetime_start.html'
+                               title='llvmint::lifetime_start'>lifetime_start</a></td>
+                        <td class='docblock short'><p>The <code>llvm.lifetime.start</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.longjmp.html'
+                               title='llvmint::longjmp'>longjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.longjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.pcmarker.html'
+                               title='llvmint::pcmarker'>pcmarker</a></td>
+                        <td class='docblock short'><p>The <code>llvm.pcmarker</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.prefetch.html'
+                               title='llvmint::prefetch'>prefetch</a></td>
+                        <td class='docblock short'><p>The <code>llvm.prefetch</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.readcyclecounter.html'
+                               title='llvmint::readcyclecounter'>readcyclecounter</a></td>
+                        <td class='docblock short'><p>The <code>llvm.readcyclecounter</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.returnaddress.html'
+                               title='llvmint::returnaddress'>returnaddress</a></td>
+                        <td class='docblock short'><p>The <code>llvm.returnaddress</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setjmp.html'
+                               title='llvmint::setjmp'>setjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.setjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.siglongjmp.html'
+                               title='llvmint::siglongjmp'>siglongjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.siglongjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.sigsetjmp.html'
+                               title='llvmint::sigsetjmp'>sigsetjmp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.sigsetjmp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stackprotector.html'
+                               title='llvmint::stackprotector'>stackprotector</a></td>
+                        <td class='docblock short'><p>The <code>llvm.stackprotector</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stackprotectorcheck.html'
+                               title='llvmint::stackprotectorcheck'>stackprotectorcheck</a></td>
+                        <td class='docblock short'><p>The <code>llvm.stackprotectorcheck</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stackrestore.html'
+                               title='llvmint::stackrestore'>stackrestore</a></td>
+                        <td class='docblock short'><p>The <code>llvm.stackrestore</code> intrinsic; known as <code>__builtin_stack_restore</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stacksave.html'
+                               title='llvmint::stacksave'>stacksave</a></td>
+                        <td class='docblock short'><p>The <code>llvm.stacksave</code> intrinsic; known as <code>__builtin_stack_save</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.trap.html'
+                               title='llvmint::trap'>trap</a></td>
+                        <td class='docblock short'><p>The <code>llvm.trap</code> intrinsic; known as <code>__builtin_trap</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.vacopy.html'
+                               title='llvmint::vacopy'>vacopy</a></td>
+                        <td class='docblock short'><p>The <code>llvm.vacopy</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.vaend.html'
+                               title='llvmint::vaend'>vaend</a></td>
+                        <td class='docblock short'><p>The <code>llvm.vaend</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.var_annotation.html'
+                               title='llvmint::var_annotation'>var_annotation</a></td>
+                        <td class='docblock short'><p>The <code>llvm.var.annotation</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.vastart.html'
+                               title='llvmint::vastart'>vastart</a></td>
+                        <td class='docblock short'><p>The <code>llvm.vastart</code> intrinsic.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "llvmint";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

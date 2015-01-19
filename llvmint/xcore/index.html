@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xcore` mod in crate `llvmint`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xcore">
+
+    <title>llvmint::xcore - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod current' href='../xcore/index.html'>xcore</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>xcore</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-41785' href='../../src/llvmint/lib.rs.html#9636-9795'>[src]</a></span></h1>
+<div class='docblock'><p>LLVM intrinsics for the xcore architecture.</p>
+</div><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.bitrev.html'
+                               title='llvmint::xcore::bitrev'>bitrev</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.bitrev</code> intrinsic; known as <code>__builtin_bitrev</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.checkevent.html'
+                               title='llvmint::xcore::checkevent'>checkevent</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.checkevent</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.chkct.html'
+                               title='llvmint::xcore::chkct'>chkct</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.chkct</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.clre.html'
+                               title='llvmint::xcore::clre'>clre</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.clre</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.clrpt.html'
+                               title='llvmint::xcore::clrpt'>clrpt</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.clrpt</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.clrsr.html'
+                               title='llvmint::xcore::clrsr'>clrsr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.clrsr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32.html'
+                               title='llvmint::xcore::crc32'>crc32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.crc32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.edu.html'
+                               title='llvmint::xcore::edu'>edu</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.edu</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.eeu.html'
+                               title='llvmint::xcore::eeu'>eeu</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.eeu</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.endin.html'
+                               title='llvmint::xcore::endin'>endin</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.endin</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.freer.html'
+                               title='llvmint::xcore::freer'>freer</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.freer</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.geted.html'
+                               title='llvmint::xcore::geted'>geted</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.geted</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getet.html'
+                               title='llvmint::xcore::getet'>getet</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getet</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getid.html'
+                               title='llvmint::xcore::getid'>getid</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getid</code> intrinsic; known as <code>__builtin_getid</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getps.html'
+                               title='llvmint::xcore::getps'>getps</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getps</code> intrinsic; known as <code>__builtin_getps</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getr.html'
+                               title='llvmint::xcore::getr'>getr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getst.html'
+                               title='llvmint::xcore::getst'>getst</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getst</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.getts.html'
+                               title='llvmint::xcore::getts'>getts</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.getts</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.in_.html'
+                               title='llvmint::xcore::in_'>in_</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.in</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.inct.html'
+                               title='llvmint::xcore::inct'>inct</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.inct</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.initcp.html'
+                               title='llvmint::xcore::initcp'>initcp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.initcp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.initdp.html'
+                               title='llvmint::xcore::initdp'>initdp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.initdp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.initlr.html'
+                               title='llvmint::xcore::initlr'>initlr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.initlr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.initpc.html'
+                               title='llvmint::xcore::initpc'>initpc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.initpc</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.initsp.html'
+                               title='llvmint::xcore::initsp'>initsp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.initsp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.inshr.html'
+                               title='llvmint::xcore::inshr'>inshr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.inshr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.int.html'
+                               title='llvmint::xcore::int'>int</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.int</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mjoin.html'
+                               title='llvmint::xcore::mjoin'>mjoin</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.mjoin</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.msync.html'
+                               title='llvmint::xcore::msync'>msync</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.msync</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.out.html'
+                               title='llvmint::xcore::out'>out</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.out</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.outct.html'
+                               title='llvmint::xcore::outct'>outct</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.outct</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.outshr.html'
+                               title='llvmint::xcore::outshr'>outshr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.outshr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.outt.html'
+                               title='llvmint::xcore::outt'>outt</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.outt</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.peek.html'
+                               title='llvmint::xcore::peek'>peek</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.peek</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setc.html'
+                               title='llvmint::xcore::setc'>setc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setc</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setclk.html'
+                               title='llvmint::xcore::setclk'>setclk</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setclk</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setd.html'
+                               title='llvmint::xcore::setd'>setd</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setd</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setev.html'
+                               title='llvmint::xcore::setev'>setev</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setev</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setps.html'
+                               title='llvmint::xcore::setps'>setps</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setps</code> intrinsic; known as <code>__builtin_setps</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setpsc.html'
+                               title='llvmint::xcore::setpsc'>setpsc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setpsc</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setpt.html'
+                               title='llvmint::xcore::setpt'>setpt</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setpt</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setrdy.html'
+                               title='llvmint::xcore::setrdy'>setrdy</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setrdy</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setsr.html'
+                               title='llvmint::xcore::setsr'>setsr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setsr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.settw.html'
+                               title='llvmint::xcore::settw'>settw</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.settw</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.setv.html'
+                               title='llvmint::xcore::setv'>setv</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.setv</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.sext.html'
+                               title='llvmint::xcore::sext'>sext</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.sext</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ssync.html'
+                               title='llvmint::xcore::ssync'>ssync</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.ssync</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.syncr.html'
+                               title='llvmint::xcore::syncr'>syncr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.syncr</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.testct.html'
+                               title='llvmint::xcore::testct'>testct</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.testct</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.testwct.html'
+                               title='llvmint::xcore::testwct'>testwct</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.testwct</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.waitevent.html'
+                               title='llvmint::xcore::waitevent'>waitevent</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.waitevent</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.zext.html'
+                               title='llvmint::xcore::zext'>zext</a></td>
+                        <td class='docblock short'><p>The <code>llvm.xcore.zext</code> intrinsic.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "llvmint";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

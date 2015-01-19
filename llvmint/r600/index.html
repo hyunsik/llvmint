@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `r600` mod in crate `llvmint`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, r600">
+
+    <title>llvmint::r600 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod current' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>r600</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-31158' href='../../src/llvmint/lib.rs.html#7256-7304'>[src]</a></span></h1>
+<div class='docblock'><p>LLVM intrinsics for the r600 architecture.</p>
+</div><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_global_size_x.html'
+                               title='llvmint::r600::read_global_size_x'>read_global_size_x</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.global.size.x</code> intrinsic; known as <code>__builtin_r600_read_global_size_x</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_global_size_y.html'
+                               title='llvmint::r600::read_global_size_y'>read_global_size_y</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.global.size.y</code> intrinsic; known as <code>__builtin_r600_read_global_size_y</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_global_size_z.html'
+                               title='llvmint::r600::read_global_size_z'>read_global_size_z</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.global.size.z</code> intrinsic; known as <code>__builtin_r600_read_global_size_z</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_local_size_x.html'
+                               title='llvmint::r600::read_local_size_x'>read_local_size_x</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.local.size.x</code> intrinsic; known as <code>__builtin_r600_read_local_size_x</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_local_size_y.html'
+                               title='llvmint::r600::read_local_size_y'>read_local_size_y</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.local.size.y</code> intrinsic; known as <code>__builtin_r600_read_local_size_y</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_local_size_z.html'
+                               title='llvmint::r600::read_local_size_z'>read_local_size_z</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.local.size.z</code> intrinsic; known as <code>__builtin_r600_read_local_size_z</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_ngroups_x.html'
+                               title='llvmint::r600::read_ngroups_x'>read_ngroups_x</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.ngroups.x</code> intrinsic; known as <code>__builtin_r600_read_ngroups_x</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_ngroups_y.html'
+                               title='llvmint::r600::read_ngroups_y'>read_ngroups_y</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.ngroups.y</code> intrinsic; known as <code>__builtin_r600_read_ngroups_y</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_ngroups_z.html'
+                               title='llvmint::r600::read_ngroups_z'>read_ngroups_z</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.ngroups.z</code> intrinsic; known as <code>__builtin_r600_read_ngroups_z</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tgid_x.html'
+                               title='llvmint::r600::read_tgid_x'>read_tgid_x</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tgid.x</code> intrinsic; known as <code>__builtin_r600_read_tgid_x</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tgid_y.html'
+                               title='llvmint::r600::read_tgid_y'>read_tgid_y</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tgid.y</code> intrinsic; known as <code>__builtin_r600_read_tgid_y</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tgid_z.html'
+                               title='llvmint::r600::read_tgid_z'>read_tgid_z</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tgid.z</code> intrinsic; known as <code>__builtin_r600_read_tgid_z</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tidig_x.html'
+                               title='llvmint::r600::read_tidig_x'>read_tidig_x</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tidig.x</code> intrinsic; known as <code>__builtin_r600_read_tidig_x</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tidig_y.html'
+                               title='llvmint::r600::read_tidig_y'>read_tidig_y</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tidig.y</code> intrinsic; known as <code>__builtin_r600_read_tidig_y</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.read_tidig_z.html'
+                               title='llvmint::r600::read_tidig_z'>read_tidig_z</a></td>
+                        <td class='docblock short'><p>The <code>llvm.r600.read.tidig.z</code> intrinsic; known as <code>__builtin_r600_read_tidig_z</code> in GCC.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "llvmint";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

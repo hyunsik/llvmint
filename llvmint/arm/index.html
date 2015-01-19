@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `arm` mod in crate `llvmint`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, arm">
+
+    <title>llvmint::arm - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod current' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>arm</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-899' href='../../src/llvmint/lib.rs.html#294-474'>[src]</a></span></h1>
+<div class='docblock'><p>LLVM intrinsics for the arm architecture.</p>
+</div><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cdp.html'
+                               title='llvmint::arm::cdp'>cdp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.cdp</code> intrinsic; known as <code>__builtin_arm_cdp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.cdp2.html'
+                               title='llvmint::arm::cdp2'>cdp2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.cdp2</code> intrinsic; known as <code>__builtin_arm_cdp2</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.clrex.html'
+                               title='llvmint::arm::clrex'>clrex</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.clrex</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32b.html'
+                               title='llvmint::arm::crc32b'>crc32b</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32b</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32cb.html'
+                               title='llvmint::arm::crc32cb'>crc32cb</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32cb</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32ch.html'
+                               title='llvmint::arm::crc32ch'>crc32ch</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32ch</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32cw.html'
+                               title='llvmint::arm::crc32cw'>crc32cw</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32cw</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32h.html'
+                               title='llvmint::arm::crc32h'>crc32h</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32h</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.crc32w.html'
+                               title='llvmint::arm::crc32w'>crc32w</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.crc32w</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.dbg.html'
+                               title='llvmint::arm::dbg'>dbg</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.dbg</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.dmb.html'
+                               title='llvmint::arm::dmb'>dmb</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.dmb</code> intrinsic; known as <code>__builtin_arm_dmb</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.dsb.html'
+                               title='llvmint::arm::dsb'>dsb</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.dsb</code> intrinsic; known as <code>__builtin_arm_dsb</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.get_fpscr.html'
+                               title='llvmint::arm::get_fpscr'>get_fpscr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.get.fpscr</code> intrinsic; known as <code>__builtin_arm_get_fpscr</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.hint.html'
+                               title='llvmint::arm::hint'>hint</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.hint</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.isb.html'
+                               title='llvmint::arm::isb'>isb</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.isb</code> intrinsic; known as <code>__builtin_arm_isb</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldaex.html'
+                               title='llvmint::arm::ldaex'>ldaex</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.ldaex</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldrex.html'
+                               title='llvmint::arm::ldrex'>ldrex</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.ldrex</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mcr.html'
+                               title='llvmint::arm::mcr'>mcr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mcr</code> intrinsic; known as <code>__builtin_arm_mcr</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mcr2.html'
+                               title='llvmint::arm::mcr2'>mcr2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mcr2</code> intrinsic; known as <code>__builtin_arm_mcr2</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mcrr.html'
+                               title='llvmint::arm::mcrr'>mcrr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mcrr</code> intrinsic; known as <code>__builtin_arm_mcrr</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mcrr2.html'
+                               title='llvmint::arm::mcrr2'>mcrr2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mcrr2</code> intrinsic; known as <code>__builtin_arm_mcrr2</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mrc.html'
+                               title='llvmint::arm::mrc'>mrc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mrc</code> intrinsic; known as <code>__builtin_arm_mrc</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.mrc2.html'
+                               title='llvmint::arm::mrc2'>mrc2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.mrc2</code> intrinsic; known as <code>__builtin_arm_mrc2</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_aesd.html'
+                               title='llvmint::arm::neon_aesd'>neon_aesd</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.aesd</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_aese.html'
+                               title='llvmint::arm::neon_aese'>neon_aese</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.aese</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_aesimc.html'
+                               title='llvmint::arm::neon_aesimc'>neon_aesimc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.aesimc</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_aesmc.html'
+                               title='llvmint::arm::neon_aesmc'>neon_aesmc</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.aesmc</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1c.html'
+                               title='llvmint::arm::neon_sha1c'>neon_sha1c</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1c</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1h.html'
+                               title='llvmint::arm::neon_sha1h'>neon_sha1h</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1h</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1m.html'
+                               title='llvmint::arm::neon_sha1m'>neon_sha1m</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1m</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1p.html'
+                               title='llvmint::arm::neon_sha1p'>neon_sha1p</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1p</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1su0.html'
+                               title='llvmint::arm::neon_sha1su0'>neon_sha1su0</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1su0</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha1su1.html'
+                               title='llvmint::arm::neon_sha1su1'>neon_sha1su1</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha1su1</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha256h.html'
+                               title='llvmint::arm::neon_sha256h'>neon_sha256h</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha256h</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha256h2.html'
+                               title='llvmint::arm::neon_sha256h2'>neon_sha256h2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha256h2</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha256su0.html'
+                               title='llvmint::arm::neon_sha256su0'>neon_sha256su0</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha256su0</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_sha256su1.html'
+                               title='llvmint::arm::neon_sha256su1'>neon_sha256su1</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.sha256su1</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vcvtfp2hf.html'
+                               title='llvmint::arm::neon_vcvtfp2hf'>neon_vcvtfp2hf</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vcvtfp2hf</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vcvthf2fp.html'
+                               title='llvmint::arm::neon_vcvthf2fp'>neon_vcvthf2fp</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vcvthf2fp</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbl1.html'
+                               title='llvmint::arm::neon_vtbl1'>neon_vtbl1</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbl1</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbl2.html'
+                               title='llvmint::arm::neon_vtbl2'>neon_vtbl2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbl2</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbl3.html'
+                               title='llvmint::arm::neon_vtbl3'>neon_vtbl3</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbl3</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbl4.html'
+                               title='llvmint::arm::neon_vtbl4'>neon_vtbl4</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbl4</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbx1.html'
+                               title='llvmint::arm::neon_vtbx1'>neon_vtbx1</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbx1</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbx2.html'
+                               title='llvmint::arm::neon_vtbx2'>neon_vtbx2</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbx2</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbx3.html'
+                               title='llvmint::arm::neon_vtbx3'>neon_vtbx3</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbx3</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.neon_vtbx4.html'
+                               title='llvmint::arm::neon_vtbx4'>neon_vtbx4</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.neon.vtbx4</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.qadd.html'
+                               title='llvmint::arm::qadd'>qadd</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.qadd</code> intrinsic; known as <code>__builtin_arm_qadd</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.qsub.html'
+                               title='llvmint::arm::qsub'>qsub</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.qsub</code> intrinsic; known as <code>__builtin_arm_qsub</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rbit.html'
+                               title='llvmint::arm::rbit'>rbit</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.rbit</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.set_fpscr.html'
+                               title='llvmint::arm::set_fpscr'>set_fpscr</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.set.fpscr</code> intrinsic; known as <code>__builtin_arm_set_fpscr</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ssat.html'
+                               title='llvmint::arm::ssat'>ssat</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.ssat</code> intrinsic; known as <code>__builtin_arm_ssat</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stlex.html'
+                               title='llvmint::arm::stlex'>stlex</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.stlex</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.stlexd.html'
+                               title='llvmint::arm::stlexd'>stlexd</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.stlexd</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.strex.html'
+                               title='llvmint::arm::strex'>strex</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.strex</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.strexd.html'
+                               title='llvmint::arm::strexd'>strexd</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.strexd</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.thread_pointer.html'
+                               title='llvmint::arm::thread_pointer'>thread_pointer</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.thread.pointer</code> intrinsic; known as <code>__builtin_thread_pointer</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.undefined.html'
+                               title='llvmint::arm::undefined'>undefined</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.undefined</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.usat.html'
+                               title='llvmint::arm::usat'>usat</a></td>
+                        <td class='docblock short'><p>The <code>llvm.arm.usat</code> intrinsic; known as <code>__builtin_arm_usat</code> in GCC.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "llvmint";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>
