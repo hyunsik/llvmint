@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod current' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod current' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
     </section>
 
     <nav class="sub">
@@ -44,7 +44,7 @@
 <h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>gcc_names</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-42300' href='../../src/llvmint/lib.rs.html#15721'>[src]</a></span></h1>
+        </span><a id='src-81280' href='../../src/llvmint/lib.rs.html#26138'>[src]</a></span></h1>
 <div class='docblock'><p>Listing of the corresponding name(s) of many GCC intrinsics, for reference/search purposes.</p>
 
 <dl>
@@ -2024,6 +2024,41 @@
 <dd><a href="../ppc/fn.altivec_vupklsb.html"><code>ppc::altivec_vupklsb</code></a></dd>
 <dt><strong><code>__builtin_altivec_vupklsh</code></strong></dt>
 <dd><a href="../ppc/fn.altivec_vupklsh.html"><code>ppc::altivec_vupklsh</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_div_fixup</code></strong></dt>
+<dd><a href="../AMDGPU/fn.div_fixup_v4f32.html"><code>AMDGPU::div_fixup_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fixup_f32.html"><code>AMDGPU::div_fixup_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fixup_v2f64.html"><code>AMDGPU::div_fixup_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fixup_f64.html"><code>AMDGPU::div_fixup_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_div_fmas</code></strong></dt>
+<dd><a href="../AMDGPU/fn.div_fmas_v4f32.html"><code>AMDGPU::div_fmas_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fmas_f32.html"><code>AMDGPU::div_fmas_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fmas_v2f64.html"><code>AMDGPU::div_fmas_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.div_fmas_f64.html"><code>AMDGPU::div_fmas_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_ldexp</code></strong></dt>
+<dd><a href="../AMDGPU/fn.ldexp_v4f32.html"><code>AMDGPU::ldexp_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.ldexp_f32.html"><code>AMDGPU::ldexp_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.ldexp_v2f64.html"><code>AMDGPU::ldexp_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.ldexp_f64.html"><code>AMDGPU::ldexp_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_rcp</code></strong></dt>
+<dd><a href="../AMDGPU/fn.rcp_v4f32.html"><code>AMDGPU::rcp_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rcp_f32.html"><code>AMDGPU::rcp_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rcp_v2f64.html"><code>AMDGPU::rcp_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.rcp_f64.html"><code>AMDGPU::rcp_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_rsq</code></strong></dt>
+<dd><a href="../AMDGPU/fn.rsq_v4f32.html"><code>AMDGPU::rsq_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_f32.html"><code>AMDGPU::rsq_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_v2f64.html"><code>AMDGPU::rsq_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_f64.html"><code>AMDGPU::rsq_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_rsq_clamped</code></strong></dt>
+<dd><a href="../AMDGPU/fn.rsq_clamped_v4f32.html"><code>AMDGPU::rsq_clamped_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_clamped_f32.html"><code>AMDGPU::rsq_clamped_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_clamped_v2f64.html"><code>AMDGPU::rsq_clamped_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.rsq_clamped_f64.html"><code>AMDGPU::rsq_clamped_f64</code></a></dd>
+<dt><strong><code>__builtin_amdgpu_trig_preop</code></strong></dt>
+<dd><a href="../AMDGPU/fn.trig_preop_v4f32.html"><code>AMDGPU::trig_preop_v4f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.trig_preop_f32.html"><code>AMDGPU::trig_preop_f32</code></a></dd>
+<dd><a href="../AMDGPU/fn.trig_preop_v2f64.html"><code>AMDGPU::trig_preop_v2f64</code></a></dd>
+<dd><a href="../AMDGPU/fn.trig_preop_f64.html"><code>AMDGPU::trig_preop_f64</code></a></dd>
 <dt><strong><code>__builtin_arm_cdp</code></strong></dt>
 <dd><a href="../arm/fn.cdp.html"><code>arm::cdp</code></a></dd>
 <dt><strong><code>__builtin_arm_cdp2</code></strong></dt>
@@ -4807,20 +4842,21 @@
 <dd><a href="../mips/fn.xor_v.html"><code>mips::xor_v</code></a></dd>
 <dt><strong><code>__builtin_msa_xori_b</code></strong></dt>
 <dd><a href="../mips/fn.xori_b.html"><code>mips::xori_b</code></a></dd>
+<dt><strong><code>__builtin_object_size</code></strong></dt>
+<dd><a href="../fn.objectsize_v16i8_p0i8.html"><code>objectsize_v16i8_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_i8_p0i8.html"><code>objectsize_i8_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_v8i16_p0i8.html"><code>objectsize_v8i16_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_i16_p0i8.html"><code>objectsize_i16_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_v4i32_p0i8.html"><code>objectsize_v4i32_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_i32_p0i8.html"><code>objectsize_i32_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_v2i64_p0i8.html"><code>objectsize_v2i64_p0i8</code></a></dd>
+<dd><a href="../fn.objectsize_i64_p0i8.html"><code>objectsize_i64_p0i8</code></a></dd>
 <dt><strong><code>__builtin_ptx_bar_sync</code></strong></dt>
 <dd><a href="../ptx/fn.bar_sync.html"><code>ptx::bar_sync</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_clock</code></strong></dt>
 <dd><a href="../ptx/fn.read_clock.html"><code>ptx::read_clock</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_clock64</code></strong></dt>
 <dd><a href="../ptx/fn.read_clock64.html"><code>ptx::read_clock64</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ctaid_w</code></strong></dt>
-<dd><a href="../ptx/fn.read_ctaid_w.html"><code>ptx::read_ctaid_w</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ctaid_x</code></strong></dt>
-<dd><a href="../ptx/fn.read_ctaid_x.html"><code>ptx::read_ctaid_x</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ctaid_y</code></strong></dt>
-<dd><a href="../ptx/fn.read_ctaid_y.html"><code>ptx::read_ctaid_y</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ctaid_z</code></strong></dt>
-<dd><a href="../ptx/fn.read_ctaid_z.html"><code>ptx::read_ctaid_z</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_gridid</code></strong></dt>
 <dd><a href="../ptx/fn.read_gridid.html"><code>ptx::read_gridid</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_laneid</code></strong></dt>
@@ -4835,24 +4871,8 @@
 <dd><a href="../ptx/fn.read_lanemask_le.html"><code>ptx::read_lanemask_le</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_lanemask_lt</code></strong></dt>
 <dd><a href="../ptx/fn.read_lanemask_lt.html"><code>ptx::read_lanemask_lt</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_nctaid_w</code></strong></dt>
-<dd><a href="../ptx/fn.read_nctaid_w.html"><code>ptx::read_nctaid_w</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_nctaid_x</code></strong></dt>
-<dd><a href="../ptx/fn.read_nctaid_x.html"><code>ptx::read_nctaid_x</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_nctaid_y</code></strong></dt>
-<dd><a href="../ptx/fn.read_nctaid_y.html"><code>ptx::read_nctaid_y</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_nctaid_z</code></strong></dt>
-<dd><a href="../ptx/fn.read_nctaid_z.html"><code>ptx::read_nctaid_z</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_nsmid</code></strong></dt>
 <dd><a href="../ptx/fn.read_nsmid.html"><code>ptx::read_nsmid</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ntid_w</code></strong></dt>
-<dd><a href="../ptx/fn.read_ntid_w.html"><code>ptx::read_ntid_w</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ntid_x</code></strong></dt>
-<dd><a href="../ptx/fn.read_ntid_x.html"><code>ptx::read_ntid_x</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ntid_y</code></strong></dt>
-<dd><a href="../ptx/fn.read_ntid_y.html"><code>ptx::read_ntid_y</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_ntid_z</code></strong></dt>
-<dd><a href="../ptx/fn.read_ntid_z.html"><code>ptx::read_ntid_z</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_nwarpid</code></strong></dt>
 <dd><a href="../ptx/fn.read_nwarpid.html"><code>ptx::read_nwarpid</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_pm0</code></strong></dt>
@@ -4865,46 +4885,8 @@
 <dd><a href="../ptx/fn.read_pm3.html"><code>ptx::read_pm3</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_smid</code></strong></dt>
 <dd><a href="../ptx/fn.read_smid.html"><code>ptx::read_smid</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_tid_w</code></strong></dt>
-<dd><a href="../ptx/fn.read_tid_w.html"><code>ptx::read_tid_w</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_tid_x</code></strong></dt>
-<dd><a href="../ptx/fn.read_tid_x.html"><code>ptx::read_tid_x</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_tid_y</code></strong></dt>
-<dd><a href="../ptx/fn.read_tid_y.html"><code>ptx::read_tid_y</code></a></dd>
-<dt><strong><code>__builtin_ptx_read_tid_z</code></strong></dt>
-<dd><a href="../ptx/fn.read_tid_z.html"><code>ptx::read_tid_z</code></a></dd>
 <dt><strong><code>__builtin_ptx_read_warpid</code></strong></dt>
 <dd><a href="../ptx/fn.read_warpid.html"><code>ptx::read_warpid</code></a></dd>
-<dt><strong><code>__builtin_r600_read_global_size_x</code></strong></dt>
-<dd><a href="../r600/fn.read_global_size_x.html"><code>r600::read_global_size_x</code></a></dd>
-<dt><strong><code>__builtin_r600_read_global_size_y</code></strong></dt>
-<dd><a href="../r600/fn.read_global_size_y.html"><code>r600::read_global_size_y</code></a></dd>
-<dt><strong><code>__builtin_r600_read_global_size_z</code></strong></dt>
-<dd><a href="../r600/fn.read_global_size_z.html"><code>r600::read_global_size_z</code></a></dd>
-<dt><strong><code>__builtin_r600_read_local_size_x</code></strong></dt>
-<dd><a href="../r600/fn.read_local_size_x.html"><code>r600::read_local_size_x</code></a></dd>
-<dt><strong><code>__builtin_r600_read_local_size_y</code></strong></dt>
-<dd><a href="../r600/fn.read_local_size_y.html"><code>r600::read_local_size_y</code></a></dd>
-<dt><strong><code>__builtin_r600_read_local_size_z</code></strong></dt>
-<dd><a href="../r600/fn.read_local_size_z.html"><code>r600::read_local_size_z</code></a></dd>
-<dt><strong><code>__builtin_r600_read_ngroups_x</code></strong></dt>
-<dd><a href="../r600/fn.read_ngroups_x.html"><code>r600::read_ngroups_x</code></a></dd>
-<dt><strong><code>__builtin_r600_read_ngroups_y</code></strong></dt>
-<dd><a href="../r600/fn.read_ngroups_y.html"><code>r600::read_ngroups_y</code></a></dd>
-<dt><strong><code>__builtin_r600_read_ngroups_z</code></strong></dt>
-<dd><a href="../r600/fn.read_ngroups_z.html"><code>r600::read_ngroups_z</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tgid_x</code></strong></dt>
-<dd><a href="../r600/fn.read_tgid_x.html"><code>r600::read_tgid_x</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tgid_y</code></strong></dt>
-<dd><a href="../r600/fn.read_tgid_y.html"><code>r600::read_tgid_y</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tgid_z</code></strong></dt>
-<dd><a href="../r600/fn.read_tgid_z.html"><code>r600::read_tgid_z</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tidig_x</code></strong></dt>
-<dd><a href="../r600/fn.read_tidig_x.html"><code>r600::read_tidig_x</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tidig_y</code></strong></dt>
-<dd><a href="../r600/fn.read_tidig_y.html"><code>r600::read_tidig_y</code></a></dd>
-<dt><strong><code>__builtin_r600_read_tidig_z</code></strong></dt>
-<dd><a href="../r600/fn.read_tidig_z.html"><code>r600::read_tidig_z</code></a></dd>
 <dt><strong><code>__builtin_setps</code></strong></dt>
 <dd><a href="../xcore/fn.setps.html"><code>xcore::setps</code></a></dd>
 <dt><strong><code>__builtin_stack_restore</code></strong></dt>

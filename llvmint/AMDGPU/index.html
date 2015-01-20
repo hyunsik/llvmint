@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod current' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod current' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod ' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
     </section>
 
     <nav class="sub">
@@ -44,9 +44,206 @@
 <h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>AMDGPU</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-456' href='../../src/llvmint/lib.rs.html#170-173'>[src]</a></span></h1>
+        </span><a id='src-9152' href='../../src/llvmint/lib.rs.html#1898-1985'>[src]</a></span></h1>
 <div class='docblock'><p>LLVM intrinsics for the AMDGPU architecture.</p>
-</div></table></section>
+</div><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fixup_f32.html'
+                               title='llvmint::AMDGPU::div_fixup_f32'>div_fixup_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fixup.f32</code> intrinsic; known as <code>__builtin_amdgpu_div_fixup</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fixup_f64.html'
+                               title='llvmint::AMDGPU::div_fixup_f64'>div_fixup_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fixup.f64</code> intrinsic; known as <code>__builtin_amdgpu_div_fixup</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fixup_v2f64.html'
+                               title='llvmint::AMDGPU::div_fixup_v2f64'>div_fixup_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fixup.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_div_fixup</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fixup_v4f32.html'
+                               title='llvmint::AMDGPU::div_fixup_v4f32'>div_fixup_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fixup.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_div_fixup</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fmas_f32.html'
+                               title='llvmint::AMDGPU::div_fmas_f32'>div_fmas_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fmas.f32</code> intrinsic; known as <code>__builtin_amdgpu_div_fmas</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fmas_f64.html'
+                               title='llvmint::AMDGPU::div_fmas_f64'>div_fmas_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fmas.f64</code> intrinsic; known as <code>__builtin_amdgpu_div_fmas</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fmas_v2f64.html'
+                               title='llvmint::AMDGPU::div_fmas_v2f64'>div_fmas_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fmas.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_div_fmas</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.div_fmas_v4f32.html'
+                               title='llvmint::AMDGPU::div_fmas_v4f32'>div_fmas_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.div.fmas.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_div_fmas</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldexp_f32.html'
+                               title='llvmint::AMDGPU::ldexp_f32'>ldexp_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.ldexp.f32</code> intrinsic; known as <code>__builtin_amdgpu_ldexp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldexp_f64.html'
+                               title='llvmint::AMDGPU::ldexp_f64'>ldexp_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.ldexp.f64</code> intrinsic; known as <code>__builtin_amdgpu_ldexp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldexp_v2f64.html'
+                               title='llvmint::AMDGPU::ldexp_v2f64'>ldexp_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.ldexp.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_ldexp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldexp_v4f32.html'
+                               title='llvmint::AMDGPU::ldexp_v4f32'>ldexp_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.ldexp.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_ldexp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rcp_f32.html'
+                               title='llvmint::AMDGPU::rcp_f32'>rcp_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rcp.f32</code> intrinsic; known as <code>__builtin_amdgpu_rcp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rcp_f64.html'
+                               title='llvmint::AMDGPU::rcp_f64'>rcp_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rcp.f64</code> intrinsic; known as <code>__builtin_amdgpu_rcp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rcp_v2f64.html'
+                               title='llvmint::AMDGPU::rcp_v2f64'>rcp_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rcp.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_rcp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rcp_v4f32.html'
+                               title='llvmint::AMDGPU::rcp_v4f32'>rcp_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rcp.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_rcp</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_clamped_f32.html'
+                               title='llvmint::AMDGPU::rsq_clamped_f32'>rsq_clamped_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.clamped.f32</code> intrinsic; known as <code>__builtin_amdgpu_rsq_clamped</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_clamped_f64.html'
+                               title='llvmint::AMDGPU::rsq_clamped_f64'>rsq_clamped_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.clamped.f64</code> intrinsic; known as <code>__builtin_amdgpu_rsq_clamped</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_clamped_v2f64.html'
+                               title='llvmint::AMDGPU::rsq_clamped_v2f64'>rsq_clamped_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.clamped.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_rsq_clamped</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_clamped_v4f32.html'
+                               title='llvmint::AMDGPU::rsq_clamped_v4f32'>rsq_clamped_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.clamped.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_rsq_clamped</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_f32.html'
+                               title='llvmint::AMDGPU::rsq_f32'>rsq_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.f32</code> intrinsic; known as <code>__builtin_amdgpu_rsq</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_f64.html'
+                               title='llvmint::AMDGPU::rsq_f64'>rsq_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.f64</code> intrinsic; known as <code>__builtin_amdgpu_rsq</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_v2f64.html'
+                               title='llvmint::AMDGPU::rsq_v2f64'>rsq_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_rsq</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.rsq_v4f32.html'
+                               title='llvmint::AMDGPU::rsq_v4f32'>rsq_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.rsq.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_rsq</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.trig_preop_f32.html'
+                               title='llvmint::AMDGPU::trig_preop_f32'>trig_preop_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.trig.preop.f32</code> intrinsic; known as <code>__builtin_amdgpu_trig_preop</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.trig_preop_f64.html'
+                               title='llvmint::AMDGPU::trig_preop_f64'>trig_preop_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.trig.preop.f64</code> intrinsic; known as <code>__builtin_amdgpu_trig_preop</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.trig_preop_v2f64.html'
+                               title='llvmint::AMDGPU::trig_preop_v2f64'>trig_preop_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.trig.preop.v2f64</code> intrinsic; known as <code>__builtin_amdgpu_trig_preop</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.trig_preop_v4f32.html'
+                               title='llvmint::AMDGPU::trig_preop_v4f32'>trig_preop_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.AMDGPU.trig.preop.v4f32</code> intrinsic; known as <code>__builtin_amdgpu_trig_preop</code> in GCC.</p>
+</td>
+                    </tr>
+                </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>

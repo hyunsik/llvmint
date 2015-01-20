@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod current' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../r600/index.html'>r600</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
+        <p class='location'><a href='../index.html'>llvmint</a></p><div class='block mod'><h2>Modules</h2><a class='mod ' href='../AMDGPU/index.html'>AMDGPU</a><a class='mod ' href='../aarch64/index.html'>aarch64</a><a class='mod ' href='../arm/index.html'>arm</a><a class='mod ' href='../cuda/index.html'>cuda</a><a class='mod ' href='../gcc_names/index.html'>gcc_names</a><a class='mod ' href='../hexagon/index.html'>hexagon</a><a class='mod ' href='../mips/index.html'>mips</a><a class='mod current' href='../nvvm/index.html'>nvvm</a><a class='mod ' href='../ppc/index.html'>ppc</a><a class='mod ' href='../ptx/index.html'>ptx</a><a class='mod ' href='../x86/index.html'>x86</a><a class='mod ' href='../xcore/index.html'>xcore</a></div>
     </section>
 
     <nav class="sub">
@@ -44,7 +44,7 @@
 <h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>llvmint</a>::<wbr><a class='mod' href=''>nvvm</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-20104' href='../../src/llvmint/lib.rs.html#4853-6668'>[src]</a></span></h1>
+        </span><a id='src-58774' href='../../src/llvmint/lib.rs.html#15275-17177'>[src]</a></span></h1>
 <div class='docblock'><p>LLVM intrinsics for the nvvm architecture.</p>
 </div><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
@@ -143,6 +143,27 @@
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.add_rz_ftz_f.html'
                                title='llvmint::nvvm::add_rz_ftz_f'>add_rz_ftz_f</a></td>
                         <td class='docblock short'><p>The <code>llvm.nvvm.add.rz.ftz.f</code> intrinsic; known as <code>__nvvm_add_rz_ftz_f</code> in GCC.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.atomic_load_add_f32.html'
+                               title='llvmint::nvvm::atomic_load_add_f32'>atomic_load_add_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.atomic.load.add.f32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.atomic_load_dec_32.html'
+                               title='llvmint::nvvm::atomic_load_dec_32'>atomic_load_dec_32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.atomic.load.dec.32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.atomic_load_inc_32.html'
+                               title='llvmint::nvvm::atomic_load_inc_32'>atomic_load_inc_32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.atomic.load.inc.32</code> intrinsic.</p>
 </td>
                     </tr>
                 
@@ -252,16 +273,16 @@
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.compiler_error.html'
-                               title='llvmint::nvvm::compiler_error'>compiler_error</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.compiler.error</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.compiler_error_p0i8.html'
+                               title='llvmint::nvvm::compiler_error_p0i8'>compiler_error_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.compiler.error.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.compiler_warn.html'
-                               title='llvmint::nvvm::compiler_warn'>compiler_warn</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.compiler.warn</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.compiler_warn_p0i8.html'
+                               title='llvmint::nvvm::compiler_warn_p0i8'>compiler_warn_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.compiler.warn.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
@@ -1099,6 +1120,188 @@
                     </tr>
                 
                     <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_f_f32.html'
+                               title='llvmint::nvvm::ldg_global_f_f32'>ldg_global_f_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.f.f32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_f_f64.html'
+                               title='llvmint::nvvm::ldg_global_f_f64'>ldg_global_f_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.f.f64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_f_v2f64.html'
+                               title='llvmint::nvvm::ldg_global_f_v2f64'>ldg_global_f_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.f.v2f64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_f_v4f32.html'
+                               title='llvmint::nvvm::ldg_global_f_v4f32'>ldg_global_f_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.f.v4f32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_i16.html'
+                               title='llvmint::nvvm::ldg_global_i_i16'>ldg_global_i_i16</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.i16</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_i32.html'
+                               title='llvmint::nvvm::ldg_global_i_i32'>ldg_global_i_i32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.i32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_i64.html'
+                               title='llvmint::nvvm::ldg_global_i_i64'>ldg_global_i_i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_i8.html'
+                               title='llvmint::nvvm::ldg_global_i_i8'>ldg_global_i_i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_v16i8.html'
+                               title='llvmint::nvvm::ldg_global_i_v16i8'>ldg_global_i_v16i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.v16i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_v2i64.html'
+                               title='llvmint::nvvm::ldg_global_i_v2i64'>ldg_global_i_v2i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.v2i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_v4i32.html'
+                               title='llvmint::nvvm::ldg_global_i_v4i32'>ldg_global_i_v4i32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.v4i32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_i_v8i16.html'
+                               title='llvmint::nvvm::ldg_global_i_v8i16'>ldg_global_i_v8i16</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.i.v8i16</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldg_global_p_p0i8.html'
+                               title='llvmint::nvvm::ldg_global_p_p0i8'>ldg_global_p_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldg.global.p.p0i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_f_f32.html'
+                               title='llvmint::nvvm::ldu_global_f_f32'>ldu_global_f_f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.f.f32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_f_f64.html'
+                               title='llvmint::nvvm::ldu_global_f_f64'>ldu_global_f_f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.f.f64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_f_v2f64.html'
+                               title='llvmint::nvvm::ldu_global_f_v2f64'>ldu_global_f_v2f64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.f.v2f64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_f_v4f32.html'
+                               title='llvmint::nvvm::ldu_global_f_v4f32'>ldu_global_f_v4f32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.f.v4f32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_i16.html'
+                               title='llvmint::nvvm::ldu_global_i_i16'>ldu_global_i_i16</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.i16</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_i32.html'
+                               title='llvmint::nvvm::ldu_global_i_i32'>ldu_global_i_i32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.i32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_i64.html'
+                               title='llvmint::nvvm::ldu_global_i_i64'>ldu_global_i_i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_i8.html'
+                               title='llvmint::nvvm::ldu_global_i_i8'>ldu_global_i_i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_v16i8.html'
+                               title='llvmint::nvvm::ldu_global_i_v16i8'>ldu_global_i_v16i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.v16i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_v2i64.html'
+                               title='llvmint::nvvm::ldu_global_i_v2i64'>ldu_global_i_v2i64</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.v2i64</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_v4i32.html'
+                               title='llvmint::nvvm::ldu_global_i_v4i32'>ldu_global_i_v4i32</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.v4i32</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_i_v8i16.html'
+                               title='llvmint::nvvm::ldu_global_i_v8i16'>ldu_global_i_v8i16</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.i.v8i16</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ldu_global_p_p0i8.html'
+                               title='llvmint::nvvm::ldu_global_p_p0i8'>ldu_global_p_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ldu.global.p.p0i8</code> intrinsic.</p>
+</td>
+                    </tr>
+                
+                    <tr>
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.lg2_approx_d.html'
                                title='llvmint::nvvm::lg2_approx_d'>lg2_approx_d</a></td>
                         <td class='docblock short'><p>The <code>llvm.nvvm.lg2.approx.d</code> intrinsic; known as <code>__nvvm_lg2_approx_d</code> in GCC.</p>
@@ -1295,9 +1498,9 @@
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.move_ptr.html'
-                               title='llvmint::nvvm::move_ptr'>move_ptr</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.move.ptr</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.move_ptr_p0i8_p0i8.html'
+                               title='llvmint::nvvm::move_ptr_p0i8_p0i8'>move_ptr_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.move.ptr.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
@@ -1449,65 +1652,65 @@
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_constant_to_gen.html'
-                               title='llvmint::nvvm::ptr_constant_to_gen'>ptr_constant_to_gen</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.constant.to.gen</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_constant_to_gen_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_constant_to_gen_p0i8_p0i8'>ptr_constant_to_gen_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.constant.to.gen.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_constant.html'
-                               title='llvmint::nvvm::ptr_gen_to_constant'>ptr_gen_to_constant</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.constant</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_constant_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_gen_to_constant_p0i8_p0i8'>ptr_gen_to_constant_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.constant.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_global.html'
-                               title='llvmint::nvvm::ptr_gen_to_global'>ptr_gen_to_global</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.global</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_global_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_gen_to_global_p0i8_p0i8'>ptr_gen_to_global_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.global.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_local.html'
-                               title='llvmint::nvvm::ptr_gen_to_local'>ptr_gen_to_local</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.local</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_local_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_gen_to_local_p0i8_p0i8'>ptr_gen_to_local_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.local.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_param.html'
-                               title='llvmint::nvvm::ptr_gen_to_param'>ptr_gen_to_param</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.param</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_param_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_gen_to_param_p0i8_p0i8'>ptr_gen_to_param_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.param.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_shared.html'
-                               title='llvmint::nvvm::ptr_gen_to_shared'>ptr_gen_to_shared</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.shared</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_gen_to_shared_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_gen_to_shared_p0i8_p0i8'>ptr_gen_to_shared_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.gen.to.shared.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_global_to_gen.html'
-                               title='llvmint::nvvm::ptr_global_to_gen'>ptr_global_to_gen</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.global.to.gen</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_global_to_gen_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_global_to_gen_p0i8_p0i8'>ptr_global_to_gen_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.global.to.gen.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_local_to_gen.html'
-                               title='llvmint::nvvm::ptr_local_to_gen'>ptr_local_to_gen</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.local.to.gen</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_local_to_gen_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_local_to_gen_p0i8_p0i8'>ptr_local_to_gen_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.local.to.gen.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_shared_to_gen.html'
-                               title='llvmint::nvvm::ptr_shared_to_gen'>ptr_shared_to_gen</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.shared.to.gen</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.ptr_shared_to_gen_p0i8_p0i8.html'
+                               title='llvmint::nvvm::ptr_shared_to_gen_p0i8_p0i8'>ptr_shared_to_gen_p0i8_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.ptr.shared.to.gen.p0i8.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
@@ -1918,9 +2121,9 @@
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.reflect.html'
-                               title='llvmint::nvvm::reflect'>reflect</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.reflect</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.reflect_p0i8.html'
+                               title='llvmint::nvvm::reflect_p0i8'>reflect_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.reflect.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
@@ -4081,9 +4284,9 @@
                     </tr>
                 
                     <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.texsurf_handle_internal.html'
-                               title='llvmint::nvvm::texsurf_handle_internal'>texsurf_handle_internal</a></td>
-                        <td class='docblock short'><p>The <code>llvm.nvvm.texsurf.handle.internal</code> intrinsic.</p>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.texsurf_handle_internal_p0i8.html'
+                               title='llvmint::nvvm::texsurf_handle_internal_p0i8'>texsurf_handle_internal_p0i8</a></td>
+                        <td class='docblock short'><p>The <code>llvm.nvvm.texsurf.handle.internal.p0i8</code> intrinsic.</p>
 </td>
                     </tr>
                 
